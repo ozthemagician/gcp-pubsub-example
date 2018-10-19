@@ -1,0 +1,14 @@
+spring:
+  cloud:
+    stream:
+      bindings:
+        input:
+          destination: users
+        output:
+          destination: users
+
+    gcp:
+      pubsub:
+        credentials:
+          location: gcp-pubsub-cred.json
+
